@@ -11,7 +11,7 @@ var port = process.env.port || 8675;
 // Setup the JSON body parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-	extended: true
+    extended: true
 }));
 
 // Routes
@@ -24,14 +24,14 @@ app.use('/user', routeUser);
 // Connect to Mongo
 mongoose.connect('mongodb://localhost/demoApp', function(error) {
 
-	if (error) {
-		console.log("Couldn't start API, database error: " + error);
-	} else {
+    if (error) {
+        console.log("Couldn't start API, database error: " + error);
+    } else {
 
-		// Mongo connection succeeded, start the app
-		app.listen(port);
-		console.log("Running!");
-	}
+        // Mongo connection succeeded, start the app
+        app.listen(port);
+        console.log("Running!");
+    }
 
 });
 
