@@ -1,6 +1,6 @@
 # express-mongoose-demo
 
-## Available Routes
+## API Routes
 * / (GET)
 * /user (GET, POST, OPTIONS)
 * /user/:id (GET, DELETE, OPTIONS)
